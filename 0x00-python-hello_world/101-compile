@@ -4,4 +4,4 @@ import compileall
 
 pyfile = os.environ["PYFILE"]
 output_file = pyfile + '.pyc'
-compileall(pyfile, output_file)
+compileall (pyfile, output_file)
