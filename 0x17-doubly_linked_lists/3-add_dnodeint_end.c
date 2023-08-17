@@ -5,10 +5,10 @@
  * of a dlistint_t list
  *
  * @head: head of the list
- * @d: value of the element
+ * @n: value of the element
  * Return: the address of the new element
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int d)
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *h;
 	dlistint_t *new;
@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int d)
 	if (new == NULL)
 		return (NULL);
 
-	new->d = d;
+	new->n = n;
 	new->next = NULL;
 
 	h = *head;
